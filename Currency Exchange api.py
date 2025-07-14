@@ -2,7 +2,7 @@ import requests
 
 base = input("Enter your Currency type : ")
 target = input("Enter the type of target currency : ")
-url = f"https://v6.exchangerate-api.com/v6/5dc5dfdca44c636aa47a0ce7/pair/{base}/{target}"
+url = f"https://v6.exchangerate-api.com/v6/API_Key/pair/{base}/{target}"
 
 response = requests.get(url)
 data = response.json()
